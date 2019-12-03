@@ -14,7 +14,14 @@ public class Q16 {
       int n1 = Integer.parseInt(s1);
       int n2 = Integer.parseInt(s2);
       
-      System.out.println("s1.compareTo(s2): " + s1.compareTo(s2));
-      System.out.print("(n1 - n2): " + (n1 - n2));
+      if(s1.compareTo(s2) >= 0 && ((n1 - n2) >= 0))
+         System.out.print("Same Sign");
+      else if(s1.compareTo(s2) < 0 && ((n1 - n2) < 0))
+         System.out.print("Same Sign");
+      else
+         System.out.print("Different Sign");
+         
+      //System.out.println("s1.compareTo(s2): " + s1.compareTo(s2));
+      //System.out.print("(n1 - n2): " + (n1 - n2));
    }
 }
