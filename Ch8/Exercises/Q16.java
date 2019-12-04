@@ -21,6 +21,9 @@ public class Q16 {
       else
          System.out.print("Different Sign");
          
+      //Can be different sign
+      //Ex. 100/5
+         
       //System.out.println("s1.compareTo(s2): " + s1.compareTo(s2));
       //System.out.print("(n1 - n2): " + (n1 - n2));
    }
