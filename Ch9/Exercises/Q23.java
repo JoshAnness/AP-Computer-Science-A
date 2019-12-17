@@ -6,21 +6,25 @@ public class Q23 {
    // the number of elements that are greater than m is the
    // same as the number of elements that are less than m)
    public static boolean isMedian(double[] sample, double m) {
-      double sum = 0.0;
+      Arrays.sort(sample);
       
-      int g = 0;
-      int l = 0;
+      int i = 0;
       
       for (double n : sample) {
-        if(n > m)
-          g++;
-        if(n < m)
-          l++;
+        i++;
          
       }
       
-      if (g == l)
+      if(i % 2.0 == 0.0) {
+         double sum = (double)(sample[i/2] + sample[(i/2)-1]);
+         if(sum / 2.0 == m)
+            return true;
+         return false;
+      }
+      
+      else if(sample[i/2] == m)
          return true;
+         
       return false;
    }
 
@@ -30,7 +34,7 @@ public class Q23 {
       double m = (double)sc.nextDouble();
       sc.close();
       
-      double[] sample = {1.0, 3.0, 3.0};
+      double[] sample = {0.0, 1.0, 2.0};
       System.out.print(isMedian(sample, m)); 
 
    }
