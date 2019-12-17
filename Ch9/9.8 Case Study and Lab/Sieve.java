@@ -18,7 +18,7 @@ public class Sieve
     {
       if (isPrime[p])  // if isPrime[p] is true
       {
-        for (int i = p*p; i < n; i += p) // I'm not sure if the step can be increased because you eventually  but to prevent going through previous iterations, you can do p^p
+        for (int i = p*p; i < n; i += p) // I'm not sure if the step can be increased because you eventually reach over n, but to prevent going through previous iterations, you can do p^2
           isPrime[i] = false;
       }
     }
