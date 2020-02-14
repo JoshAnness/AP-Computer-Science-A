@@ -34,81 +34,107 @@ public class Q13 {
             break;
          switch(words.get(i).charAt(0)) {
             case 'a':
+            case 'A':
                listA.add(words.get(i));
                break;
+            case 'B':
             case 'b':
                listB.add(words.get(i));
                break;
+            case 'C':
             case 'c':
                listC.add(words.get(i));
                break;
             case 'd':
+            case 'D':
                listD.add(words.get(i));
                break;
             case 'e':
+            case 'E':
                listE.add(words.get(i));
                break;
             case 'f':
+            case 'F':
                listF.add(words.get(i));
                break;
-            case 'g': 
+            case 'g':
+            case 'G': 
                listG.add(words.get(i));
                break;
             case 'h':
+            case 'H':
                listH.add(words.get(i));
                break;
             case 'i':
+            case 'I':
                listI.add(words.get(i));
                break;
             case 'j':
+            case 'J':
                listJ.add(words.get(i));
                break;
             case 'k':
+            case 'K':
                listK.add(words.get(i));
                break;
             case 'l':
+            case 'L':
                listL.add(words.get(i));
                break;
             case 'm':
+            case 'M':
                listM.add(words.get(i));
                break;
             case 'n':
+            case 'N':
                listN.add(words.get(i));
                break;
             case 'o':
+            case 'O':
                listO.add(words.get(i));
                break;
             case 'p':
+            case 'P':
                listP.add(words.get(i));
                break;
             case 'q':
+            case 'Q':
                listQ.add(words.get(i));
                break;
             case 'r':
+            case 'R':
                listR.add(words.get(i));
                break;
             case 's':
+            case 'S':
                listS.add(words.get(i));
                break;
             case 't':
+            case 'T':
                listT.add(words.get(i));
                break;
             case 'u':
+            case 'U':
                listU.add(words.get(i));
                break;
             case 'v':
+            case 'V':
                listV.add(words.get(i));
                break;
             case 'w':
+            case 'W':
                listW.add(words.get(i));
                break;
             case 'x':
+            case 'X':
                listX.add(words.get(i));
                break;
             case 'y':
+            case 'Y':
                listY.add(words.get(i));
                break;
             case 'z':
+            case 'Z':
                listZ.add(words.get(i));
                break;
             default:
@@ -144,9 +170,9 @@ public class Q13 {
    }
    
    public static void main(String[] args) {      
-      List<String> list = Arrays.asList("af", "bd", "a", "b", "g", "k", "ab");
+      List<String> list = Arrays.asList("Ben", "josh", "aidan", "aaron", "daren", "joel", "Alex", "Zeb", "ryan", "Reince");
       
-      list.replaceAll(String::toLowerCase);
+      //list.replaceAll(String::toLowerCase);
       
       words(list);
       
