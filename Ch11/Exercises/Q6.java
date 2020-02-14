@@ -26,8 +26,12 @@ public class Q6 {
       data.add(-3);
       data.add(2);
       data.add(-3);
-      data.add(2);   
+      data.add(2); 
       
-      System.out.print(smallestValue(data));
+      if(data.size() < 1) 
+         System.out.print(data);
+
+      else
+         System.out.print(smallestValue(data));
    }
 }

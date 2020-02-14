@@ -18,7 +18,7 @@ public class Q5 {
       data.add("Ben");
       data.add("Alex");
       data.add("David");
-      data.add("Joel");   
+      data.add("Joel");  
       
       System.out.print(reverse(data));
    }
