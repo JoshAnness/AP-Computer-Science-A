@@ -4,8 +4,8 @@ public class Diploma {
    private String name;
    private String major;
    public Diploma(String s1, String s2) {
-      this.name = name;
-      this.major = major;
+      name = s1;
+      major = s2;
    }
    
    public String toString() {
